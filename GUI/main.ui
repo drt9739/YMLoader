@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>11</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Главная</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Icons/yandex_music.png</normaloff>Icons/yandex_music.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(63, 63, 63);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QScrollArea" name="tracks">
+    <property name="geometry">
+     <rect>
+      <x>174</x>
+      <y>240</y>
+      <width>615</width>
+      <height>450</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>615</width>
+      <height>450</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>615</width>
+      <height>450</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>613</width>
+       <height>448</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2"/>
+    </widget>
+   </widget>
+   <widget class="QScrollArea" name="playlists">
+    <property name="geometry">
+     <rect>
+      <x>174</x>
+      <y>10</y>
+      <width>615</width>
+      <height>220</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>615</width>
+      <height>220</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>615</width>
+      <height>220</height>
+     </size>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>613</width>
+       <height>218</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout"/>
+    </widget>
+   </widget>
+   <widget class="QLineEdit" name="list">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>650</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift Light Condensed</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{border:None;
+background-color: rgba(255, 255, 255, 0);
+border-bottom:2px solid rgb(236, 236, 236);
+color: rgb(255, 255, 255);}
+QLineEdit:hover{background-color: rgba(255, 255, 255, 100)}</string>
+    </property>
+    <property name="inputMask">
+     <string>D0</string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+    <property name="maxLength">
+     <number>2</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rightchev">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>650</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background-color: rgba(255, 255, 255, 0);
+border-radius: 10px;}
+QPushButton:hover{background-color: rgba(255, 255, 255, 100);}
+QPushButton:pressed{background-color: rgba(150,150,150, 150);}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Icons/chevron-right.svg</normaloff>Icons/chevron-right.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>41</width>
+      <height>41</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+Right</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="leftchev">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>650</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background-color: rgba(255, 255, 255, 0);
+border-radius: 10px;}
+QPushButton:hover{background-color: rgba(255, 255, 255, 100);}
+QPushButton:pressed{background-color: rgba(150,150,150, 150);}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Icons/chevron-left.svg</normaloff>Icons/chevron-left.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>41</width>
+      <height>41</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+Left</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rightchevs">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>650</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background-color: rgba(255, 255, 255, 0);
+border-radius: 10px;}
+QPushButton:hover{background-color: rgba(255, 255, 255, 100);}
+QPushButton:pressed{background-color: rgba(150,150,150, 150);}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Icons/chevrons-right.svg</normaloff>Icons/chevrons-right.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>41</width>
+      <height>41</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+Shift+Right</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="lefichevs">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>650</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background-color: rgba(255, 255, 255, 0);
+border-radius: 10px;}
+QPushButton:hover{background-color: rgba(255, 255, 255, 100);}
+QPushButton:pressed{background-color: rgba(150,150,150, 150);}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Icons/chevrons-left.svg</normaloff>Icons/chevrons-left.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>41</width>
+      <height>41</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string>Ctrl+Shift+Left</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="searchframe">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>166</y>
+      <width>171</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>4</x>
+       <y>5</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>Icons/search.svg</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>5</y>
+       <width>141</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift Light Condensed</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);
+border: None;
+border-bottom:2px solid rgb(236, 236, 236);
+border-radius:5px;
+color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="searchbtn">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>200</y>
+      <width>166</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{border: 2px solid rgb(255, 255, 255);
+border-radius: 15px;
+background-color: rgba(199, 199, 199, 0);
+color: rgb(255, 255, 255);}
+QPushButton:hover{background-color: rgb(199, 199, 199)}
+QPushButton:pressed{background-color:rgba(100, 98, 98, 240)}</string>
+    </property>
+    <property name="text">
+     <string>Искать</string>
+    </property>
+    <property name="shortcut">
+     <string>Return</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="settingbtn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>151</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{border: 2px solid rgb(255, 255, 255);
+border-radius: 15px;
+background-color: rgba(199, 199, 199, 125);
+color: rgb(255, 255, 255);}
+QPushButton:hover{background-color: rgb(199, 199, 199)}
+QPushButton:pressed{background-color:rgba(100, 98, 98, 240)}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Icons/settings.svg</normaloff>Icons/settings.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>80</width>
+      <height>80</height>
+     </size>
+    </property>
+    <property name="shortcut">
+     <string>Shift+S</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
